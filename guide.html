@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockView</title>
+
+    <style>
+
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        ul{
+            list-style-type:none;
+        }
+
+        body{
+            font-family:"맑은 고딕","돋움";
+            font-size:100%;
+            background-color:#f2f2f2;
+        }
+
+        a{
+            text-decoration:none;
+            color:white;
+            display:block;
+        }
+
+        [class*="c_"]{
+            float:left;
+            padding:10px;
+        }
+
+        [class*="c_"]{
+            width:100%;
+        }
+        
+
+        @media only screen and (min-width: 600px){
+
+            .c_m_1{width:8.33%;}
+            .c_m_2{width:16.66%;}
+            .c_m_3{width:25%;}
+            .c_m_4{width:33.33%;}
+            .c_m_5{width:41.66%;}
+            .c_m_6{width:50%;}
+            .c_m_7{width:58.33%;}
+            .c_m_8{width:66.66%;}
+            .c_m_9{width:75%;}
+            .c_m_10{width:83.33%;}
+            .c_m_11{width:91.66%;}
+            .c_m_12{width:100%;}
+        }
+
+        @media only screen and (min-width: 768px){
+
+            .c_1{width:8.33%;}
+            .c_2{width:16.66%;}
+            .c_3{width:25%;}
+            .c_4{width:33.33%;}
+            .c_5{width:41.66%;}
+            .c_6{width:50%;}
+            .c_7{width:58.33%;}
+            .c_8{width:66.66%;}
+            .c_9{width:75%;}
+            .c_10{width:83.33%;}
+            .c_11{width:91.66%;}
+            .c_12{width:100%;}
+        }
+
+        header{
+            height:100px;
+            padding:20px;
+            background-color:#5b3b69;
+            color:white;
+        }
+
+        header h1{
+            margin-top:10px;
+        }
+
+        aside#menu{
+            color:#ffffff;
+        }
+
+        aside#menu li{
+            padding:15px;
+            margin:5px 0 0 0;
+            background-color:#cbe0f2;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        aside#menu li:hover{
+            background-color:#fcfbfe;
+        }
+
+        section#main{
+            padding:20px;
+            background-color:white;
+        }
+
+        section#main h2{
+            margin-bottom:15px;
+        }
+
+        section#main p{
+            padding:5px;
+            font-size:0.95em;
+            line-height:150%;
+        }
+
+        .stock_box{
+            margin-top:20px;
+            padding:15px;
+            border:solid 1px #cccccc;
+            background-color:#f9f9f9;
+        }
+
+        .stock_box h3{
+            margin-bottom:10px;
+        }
+
+        .upprice{
+            color:red;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        .downprice{
+            color:blue;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        aside#photos{
+            background-color:#e0ecff;
+        }
+
+        aside#photos h4{
+            margin-bottom:10px;
+        }
+
+        aside#photos img{
+            width:100%;
+        }
+
+        aside#photos li{
+            margin:5px 0 0 0;
+        }
+
+        footer{
+            height:70px;
+            padding:20px;
+            clear:both;
+            text-align:center;
+            background-color:#dddddd;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="c_12">
+
+        <h1>StockView 주식 정보 사이트</h1>
+
+    </header>
+
+    <aside id="menu" class="c_m_3 c_3">
+
+        <ul>
+            <li>
+                <a href="index.html" style="background-color:#b69aeb; padding:15px;">시장현황</a>
+            </li>
+
+            <li>
+                <a href="chart.html" style="background-color:#8e76bb; padding:15px;">종목차트</a>
+            </li>
+
+            <li>
+                <a href="news.html" style="background-color:#756299; padding:15px;">투자뉴스</a>
+            </li>
+
+            <li>
+                <a href="favorite.html" style="background-color:#5b4e74; padding:15px;">관심종목</a>
+            </li>
+
+            <li>
+                <a href="guide.html" style="background-color:#574970; padding:15px;">투자가이드</a>
+            </li>
+
+        </ul>
+
+
+    </aside>
+
+<section id="main" class="c_m_6 c_6">
+
+    <h2 style="margin-bottom:20px; color:#1d4ed8;">
+        초보 투자자를 위한 투자 가이드
+    </h2>
+
+    <div class="stock_box">
+
+        <h3>1. 분산 투자하기</h3>
+
+        <p>
+            하나의 종목에만 투자하지 말고 여러 산업과 종목에 나누어 투자하세요.
+            리스크를 줄이는 가장 기본적인 방법입니다.
+        </p>
+
+    </div>
+
+
+    <div class="stock_box">
+
+        <h3>2. 장기 투자 습관 가지기</h3>
+
+        <p>
+            단기 등락에 흔들리지 말고 기업의 성장 가능성을 보고 장기적으로 투자하는 습관이 중요합니다.
+        </p>
+
+    </div>
+
+
+    <div class="stock_box">
+
+        <h3>3. 기업 재무 정보 확인하기</h3>
+
+        <p>
+            PER, PBR, 시가총액, 매출 성장률 등을 확인하여 안정적인 기업인지 분석하세요.
+        </p>
+
+    </div>
+
+
+    <div class="stock_box">
+
+        <h3>4. 뉴스와 시장 흐름 체크하기</h3>
+
+        <p>
+            경제 뉴스와 금리, 환율, 반도체 및 AI 산업 흐름 등을 꾸준히 확인하는 것이 중요합니다.
+        </p>
+
+    </div>
+
+
+    <div class="stock_box">
+
+        <h3>5. 무리한 대출 투자 금지</h3>
+
+        <p>
+            빚을 이용한 무리한 투자보다는 자신의 자금 범위 안에서 안전하게 투자하는 것이 중요합니다.
+        </p>
+
+    </div>
+
+</section>
+
+    <aside id="photos" class="c_m_3 c_3">
+
+        <h4>주식 갤러리</h4>
+
+        <ul>
+
+            <li>
+                <img src="img/stock1.jpg">
+            </li>
+
+            <li>
+                <img src="img/stock2.jpg">
+            </li>
+
+            <li>
+                <img src="img/stock3.jpg">
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <footer class="c_12">
+
+        COPYRIGHT(C) StockView All Rights Reserved.
+
+    </footer>
+
+</body>
+</html>
